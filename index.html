@@ -1,1 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Math Problem</title>
+  <link rel="stylesheet" href="styles.css">
+  <!--add script link icon-->
+  <script src="https://kit.fontawesome.com/eb339bb978.js" crossorigin="anonymous">
+  </script>
 
+
+</head>
+<body>
+  <div class="container">
+    <!-- create a upper container-->
+    <div class="upper-container">
+      <p>Math Partner</p>
+      <input type="button" id="historyBtn" value="History" onclick="historyButton()"><!-- create a dom event on click historyButton-->
+      <input type="button" id="saveBtn" value="Saved Solution" onclick="SavedButton()">
+    </div>
+
+    <!--CREATE A EMPTY DIV TO SHOW SOME DATA-->
+  <div class="historycon">
+
+  </div>
+
+  <!--CREATE A SECOND SECTION-->
+  <div class="subContainer">
+    <div class="middle-container">
+      <div class="box1">
+        <label for="problemBar">
+          <h2>Problem</h2></label>
+          <input type="text" id="problemBar" placeholder="TYPE HERE...">
+      </div>
+
+      <div class="box2">
+        <label for="categoryBar">
+          <h2>Select category</h2>
+        </label>
+
+        <!-- CREATE A SELECT OPTION-->
+
+        <select name="categoryBar" id="categoryBar">
+          <!-----------------------CREATE OPTIONS--------------------------->
+          <oPtion value="simplify">Simplify</oPtion>
+          <option value="factor">Factor</option>
+          <option value="derive">derive</option>
+          <option value="integrate">integrate</option>
+          <option value="tangent">Find</option>
+          <option value="area">area under curve</option>
+          <option value="cos">cosine</option>
+          <option value="tan">Tangent</option>
+        </select>
+      </div>
+
+      <div class="box3">
+        <!--create a icon-->
+        <!--create in description link icon-->
+        <button type="submit" id="searchBtn" onclick="SearchButton()">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button><!--create a events SearchButton()-->
+      </div>
+    </div>
+    <!--create a container inputbox-->
+    <div class="cantainer-input">
+      <div class="inputBox1">
+
+      </div>
+      <div class="inputBox2"></div>
+      <!--create a delete button-->
+      <!--create a event delbtn()-->
+      <button type="reset" id="deleteBtn" onclick="delBtn()">
+        <i class="fa-solid fa-trash-can fa-3x"></i>
+      </button>
+    </div>
+  </div>
+  </div>
+ 
+  <script src="App.js"></script>
+</body>
+</html>
