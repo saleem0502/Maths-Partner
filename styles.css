@@ -145,6 +145,17 @@ input[type="text"] {
 
 }
 
+#deleteBtn {
+  display: inline-block;
+  padding: 5px;
+  background-color: #ccc;
+  margin-top: -25px;
+  margin-bottom: 25px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
 .inputBox2 {
   display: flex;
   align-items: center;
